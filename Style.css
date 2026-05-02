@@ -4,7 +4,6 @@ body {
     background-color: #f6f8f7;
 }
 
-/* NAVBAR */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -32,7 +31,6 @@ body {
     border-radius: 6px;
 }
 
-/* HERO */
 .hero {
     padding: 40px;
 }
@@ -59,7 +57,6 @@ body {
     border-radius: 10px;
 }
 
-/* FEATURES */
 .features {
     display: flex;
     gap: 20px;
@@ -75,7 +72,6 @@ body {
     box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
-/* MAIN */
 .main {
     display: flex;
     gap: 40px;
@@ -83,13 +79,13 @@ body {
     align-items: stretch;
 }
 
-/* LEADERBOARD */
+
 .leaderboard {
     background: white;
     padding: 25px;
     border-radius: 16px;
     width: 380px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0,0.5);
 }
 
 .leaderboard h3 {
@@ -110,14 +106,12 @@ body {
     border-bottom: 1px solid #f0f0f0;
 }
 
-/* LEFT SIDE */
 .left {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-/* RANK CIRCLE */
 .rank {
     width: 28px;
     height: 28px;
@@ -131,9 +125,8 @@ body {
     font-weight: bold;
 }
 
-/* COLORS */
 .green {
-    color: #2e7d32;
+    color: 2e7d32;
 }
 
 .yellow {
@@ -141,10 +134,9 @@ body {
 }
 
 .red {
-    color: #c62828;
+    color: #c62828; 
 }
 
-/* VISUAL */
 .visual {
     flex: 1;
     background: white;
@@ -158,7 +150,6 @@ body {
     border-radius: 12px;
 }
 
-/* INFO BOX */
 .info-box {
     margin-top: 20px;
     background: #e8f5e9;
