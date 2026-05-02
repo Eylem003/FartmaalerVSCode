@@ -1,0 +1,168 @@
+body {
+    font-family: "Segoe UI", sans-serif;
+    margin: 0;
+    background-color: #f6f8f7;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background: white;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.login input {
+    padding: 8px;
+    margin-right: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.login button {
+    padding: 8px 14px;
+    background: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+/* HERO */
+.hero {
+    padding: 40px;
+}
+
+.hero h1 {
+    font-size: 42px;
+}
+
+.hero span {
+    color: #2e7d32;
+}
+
+.hero p {
+    color: #555;
+    max-width: 500px;
+}
+
+.start-btn {
+    margin-top: 20px;
+    padding: 14px 24px;
+    background: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+/* FEATURES */
+.features {
+    display: flex;
+    gap: 20px;
+    padding: 0 40px 40px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    flex: 1;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* MAIN */
+.main {
+    display: flex;
+    gap: 40px;
+    padding: 0 40px 40px;
+    align-items: stretch;
+}
+
+/* LEADERBOARD */
+.leaderboard {
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    width: 380px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.leaderboard h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.leaderboard ul {
+    list-style: none;
+    padding: 0;
+}
+
+.leaderboard li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+/* LEFT SIDE */
+.left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* RANK CIRCLE */
+.rank {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #e8f5e9;
+    color: #2e7d32;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* COLORS */
+.green {
+    color: #2e7d32;
+}
+
+.yellow {
+    color: #f9a825;
+}
+
+.red {
+    color: #c62828;
+}
+
+/* VISUAL */
+.visual {
+    flex: 1;
+    background: white;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+}
+
+.visual img {
+    max-width: 100%;
+    border-radius: 12px;
+}
+
+/* INFO BOX */
+.info-box {
+    margin-top: 20px;
+    background: #e8f5e9;
+    padding: 15px;
+    border-radius: 10px;
+    color: #2e7d32;
+}
