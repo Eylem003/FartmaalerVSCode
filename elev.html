@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="da">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ny Måling</title>
+        <link rel="stylesheet" href="Style.css">
+    </head>
+    <body>
+
+        <div class="measurement-container">
+            <div class="measurement-card">
+                <div class="header-row">
+                    <div class="icon-circle">👤</div>
+                    <div>
+                        <h1>Start en ny måling</h1>
+                        <p>Udfyld oplysningerne og gør klar til at måle</p>
+                    </div>
+                </div>
+
+                <label>Indtast kode</label>
+                <input type="text" placeholder="Indtast Kode">
+
+                <label>Gruppenavn</label>
+                <input type="text" placeholder="F.eks. Gruppe 3">
+
+                <label>Biltype</label>
+                <select>
+                    <option>Vælg biltype</option>
+                    <option>...</option>
+                    <option>...</option>
+                    <option>...</option>
+                    <option>...</option>
+                </select>
+
+                <label>Vejtype (Hastighedsgrænse)</label>
+                <select>
+                    <option>Vælg vejtype</option>
+                    <option>...</option>
+                    <option>...</option>
+                    <option>...</option>
+                </select>
+
+                <button class="start-measure-btn">
+                    ▶ Start måling
+                </button>
+
+                <div class="info-text">
+                    Du kan ikke starte før alle felter er udfyldt
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>

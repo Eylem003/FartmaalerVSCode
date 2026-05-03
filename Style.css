@@ -17,31 +17,6 @@ body {
     font-size: 20px;
 }
 
-.nav-right {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
-
-.student-access {
-display: flex;
-gap: 8px;
-}
-
-.student-access input {
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-}
-
-.student.-access button {
-    padding: 8px 14px;
-    background: #66bb6a;
-    color: white;
-    border: none;
-    border-radius: 6px;
-}
-
 .login input {
     padding: 8px;
     margin-right: 8px;
@@ -182,4 +157,79 @@ gap: 8px;
     padding: 15px;
     border-radius: 10px;
     color: #2e7d32;
+}
+
+.measurement-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.measurement-card {
+    background: white;
+    padding: 50px;
+    border-radius: 20px;
+    width: 600px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+}
+
+.header-row {
+    display: flex;
+    align-items: center;
+    gap: 20;
+    margin-bottom: 25px;
+}
+
+.icon-circle {
+    width: 70px;
+    height: 70px;
+    background: #2e7d32;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.measurement-card h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.measurement-card p {
+    margin-top: 5px;
+    color: #666;
+}
+
+.measurement-card label {
+    display: block;
+    margin-top: 18px;
+    font-weight: 600;
+}
+
+.measurement-card input,
+.measurement-card select {
+    width: 100%;
+    padding: 14px;
+    margin-top: 6px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 15px;
+}
+
+.start-measure-btn {
+    width: 100%;
+    margin-top: 25px;
+    padding: 16px;
+    background: linear-gradient(to right, #2e7d32, #4caf50);
+    color: white;
+    border: none;
+    border-radius: 16px;
+}
+
+.info-text {
+    margin-top: 10px;
+    font-size: 14px;
 }
