@@ -9,11 +9,37 @@ body {
     justify-content: space-between;
     padding: 15px 40px;
     background: white;
+    align-items: center;
 }
 
 .logo {
     font-weight: bold;
     font-size: 20px;
+}
+
+.nav-right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.student-access {
+display: flex;
+gap: 8px;
+}
+
+.student-access input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.student.-access button {
+    padding: 8px 14px;
+    background: #66bb6a;
+    color: white;
+    border: none;
+    border-radius: 6px;
 }
 
 .login input {
@@ -113,8 +139,8 @@ body {
 }
 
 .rank {
-    width: 28px;
-    height: 28px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     background: #e8f5e9;
     color: #2e7d32;
