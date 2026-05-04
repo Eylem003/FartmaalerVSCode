@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="da">
+    <head>
+        <meta charset=""UTF-8 />
+        <meta name="viewport" content="width=device-with, initial-scale=1.0" />
+        <title>Elev måling</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+<body>
+    <main class="page">
+        <section class="dashboard">
+            <header class="topbar">
+                <div class="select-group">
+                    <label>Gruppe</label>
+                    <button class="select-button">
+                        <span class="select-icon">👥</span>
+                        <span id="gruppe-value">Gruppe </span>
+                        <span class="chevron">▼</span>
+                    </button>
+                    <p class="active-session">🔒 Aktiv session</p>
+                </div>
+               
+                <div class="select-group">
+                    <label>Biltype</label>
+                    <button class="select-button">
+                        <span class="select-icon">🚗</span>
+                        <span id="biltype-value">Benzin - lille</span>
+                        <span class="chevron">▼</span>
+                    </button>
+                </div>
+               
+                <div class="select-group">
+                    <label>Vejtype</label>
+                    <button class="select-button wide">
+                        <span class="select-icon">⚠️</span>
+                        <span id="vejtype-value">Byzone 50 (50 km/t)</span>
+                        <span class="chevron">▼</span>
+                    </button>
+                </div>
+
+                <div class="session-actions">
+                    <button class="end-session-button">
+                        <span>📊</span>
+                        <span>Afslut session</span>
+                    </button>
+                    <p>Session startede <span id="session-start">---</span></p>
+                </div>
+
+                <div class="notice">
+                    <span>🔒</span>
+                    <p>Gruppen er låst, mens I har en aktiv session. Andre grupper kan ikke vælge jer.</p>
+                </div>
+
+                <section class="content-grid">
+                    <section class="left-column">
+                        <article class="card latest-card">
+                            <h2>Din seneste måling</h2>
+                            <div class="speed-area">
+                                <div class="gauge-wrapper">
+                                    <svg class="gauge" viewBox="0 0 260 150">
+                                        <path
+                                        class="gauge-track"
+                                        d="M35 125 A95 95 0 0 1 225 125" />
+                                        <path
+                                        class="gauge-process"
+                                        d="M35 125 A95 95 0 0 1 225 125" />
+                                    </svg>
+                                    <div class="speed-text">
+                                        <strong id="speed-value">---</strong>
+                                        <span>Km/t</span>
+                                    </div>
+                                </div>
+                                <p class="muted">Simuleret hastighed</p>
+                            </div>
+                            <div class="statux-box danger" id="warning-box">
+                                <div class="status-emoji" id="warning-icon">---</div>
+                                <div>
+                                    <h3 id="warning-title">---</h3>
+                                    <p id="warning-line-1">---</p>
+                                    <p id="warning-line-2">---</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="card session-card">
+                            <h2>Din session</h2>
+                            <div class="stats-grid">
+                                <div class="stat-box">
+                                    <div class="stat-icon blue">📊</div>
+                                    <div>
+                                        <p>Antal målinger</p>
+                                        <strong id="antal-maalinger">---</strong>
+                                    </div>
+                                </div>
+                                <div class="stat-box">
+                                    <div class="stat"-icon orange>⚡</div>
+                                    <div>
+                                        <p>Gns. hastighed</p>
+                                        <strong id="gns-hastighed">---</strong>
+                                    </div>
+                                </div>
+                                <div class="stat-box">
+                                    <div class="stat-icon green">🌿</div>
+                                    <div>
+                                        <p>CO₂ sparet i alt</p>
+                                        <strong id="co2-sparet">---</strong>
+                                    </div>
+                                </div>
+                                <div class="stat-box">
+                                    <div class="stat-icon red">📈</div>
+                                    <div>
+                                        <p>Seneste måling</p>
+                                        <strong id="seneste-maaling">---</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="info-strip">
+                                Målinger gemmes automatisk efter hver måling og kan ses i Historik.
+                            </div>
+                        </article>
+                    </section>
+
+                    <section class="middle-column">
+                        <article class="card calculation-card">
+                            <h2>Sådan beregnes hastigheden <span class="small-info">ℹ️</span></h2>
+                            <div class="calculation-grid">
+                                <div>
+                                    <p>Tid mellem sensorerne</p>
+                                    <strong id="tid">---</strong>
+                                </div>
+                                <div>
+                                    <p>Tid mellem sensorerne</p>
+                                    <strong id="tid">---</strong>
+                                </div>
+                                <div>
+                                    <p>Vejtype</p>
+                                    <strong>
+                                        <span id="vejtype-calc">---</span>
+                                    </strong>
+                                </div>
+                            </div>
+                            <div class="formula-box">
+                                <p class="formula-title">Formel:</p>
+                                <p>Hastighed = (distance / tid) × skaleringsfaktor</p>
+                                <p class="formula-result" id="formula-example">---</p>
+                            </div>
+                        </article>
+
+                        <article class="card comparison-card">
+                            <h2>Sammenlign med grænse</h2>
+                            <div class="comparison-row">
+                                <div class="speed-limit" id="limit-badge">---</div>
+                                <div>
+                                    <p>Din hastighed</p>
+                                    <strong id="din-hastighed">---</strong>
+                                </div>
+                                <div>
+                                    <p>Afvigelse</p>
+                                    <strong class="red-text" id="afvigelse">---</strong>
+                                </div>
+                            </div>
+                        </article>
+
+                        
+
+                    </section>
+
+
+
+
+                </section>
+
+
+
+
+            </header>
+        </section>
+    </main>
+</body>
+
+</html>
